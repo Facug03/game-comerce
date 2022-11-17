@@ -32,7 +32,7 @@ export default function Detail() {
       <div className='px-11 w-3/4'>
         <h3 className='text-2xl'>Descripcion</h3>
         <p className='text-justify'>{api[0].description}</p>
-        <h3>Detalles del producto</h3>
+        <h3 className=''>Detalles del producto</h3>
       </div>
     </>
   )
