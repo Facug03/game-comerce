@@ -13,6 +13,13 @@ gameRouter.get('/', (req, res) => {
     .catch((err) => res.status(404).json({ error: err }))
 })
 
+gameRouter.get('/trending', (req, res) => {
+  gameModel
+    .find({})
+    .then((response) => res.json(response.splice(0, 5)))
+    .catch((err) => res.status(404).json({ error: err }))
+})
+
 gameRouter.get('/:id', (req, res) => {
   const { id } = req.params
 
@@ -40,7 +47,5 @@ gameRouter.post('/muchos', (req, res) => {
 
   // newUser.save().then((saveUser) => res.json(saveUser))
 })
-
-//get, post etc
 
 export default gameRouter
