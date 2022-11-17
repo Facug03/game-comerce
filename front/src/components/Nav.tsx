@@ -1,17 +1,17 @@
 export default function Nav() {
   return (
     <header className='bg-nav'>
-      <nav className='flex justify-between items-center px-11 py-6'>
-        <h3 className='text-white'>Logo</h3>
+      <nav className='flex justify-between items-center px-11 py-2'>
+        <h3 className='text-white font-uBold font-extrabold'>GAMESHOP</h3>
         <div className='flex items-center'>
           <input
-            className='w-56 h-10 outline-none text-slate-100 rounded-tl-2xl rounded-bl-2xl border-2 border-white/50 bg-slate-900 p-3'
+            className='w-56 h-10 outline-none bg-transparent text-slate-100 border-b-1 p-3'
             placeholder='Search Game'
           />
-          <button className='h-10 w-12 rounded-tr-2xl rounded-br-2xl border-2 border-l-0 border-white/50 bg-slate-600'>
+          <button className='h-10 w-12 '>
             <svg
               fill='#ffffff'
-              className='w-5 m-auto h-full'
+              className='w-4 m-auto h-full'
               viewBox='0 0 487.95 487.95'
             >
               <g>
@@ -35,14 +35,14 @@ export default function Nav() {
             stroke-linecap='round'
             stroke-linejoin='round'
             stroke-width='2'
-            width='30'
-            height='30'
+            width='24'
+            height='24'
           >
             <path d='M6 6 L30 6 27 19 9 19 M27 23 L10 23 5 2 2 2' />
             <circle cx='25' cy='27' r='2' />
             <circle cx='12' cy='27' r='2' />
           </svg>
-          <svg viewBox='0 0 500 500' fill='#fff' width='40' height='40'>
+          <svg viewBox='0 0 500 500' fill='#fff' width='34' height='34'>
             <g>
               <g>
                 <path d='M250,291.6c-52.8,0-95.8-43-95.8-95.8s43-95.8,95.8-95.8s95.8,43,95.8,95.8S302.8,291.6,250,291.6z M250,127.3    c-37.7,0-68.4,30.7-68.4,68.4s30.7,68.4,68.4,68.4s68.4-30.7,68.4-68.4S287.7,127.3,250,127.3z' />

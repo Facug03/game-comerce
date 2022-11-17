@@ -5,7 +5,7 @@ export default function Games() {
     <article className='mt-4 px-11 font-bold'>
       <div className='my-4 flex justify-between items-center'>
         <h2 className='text-2xl text-gray-900'>Tendencias</h2>
-        <button className=' text-btn border-2 border-btn py-1 px-4 rounded-sm'>
+        <button className='text-btn border-2 border-btn py-1 px-4 rounded-sm'>
           ver más
         </button>
       </div>
@@ -22,9 +22,9 @@ export default function Games() {
               src={game.img}
               alt={game.name}
             />
-            <div className='h-14 w-full bottom-0 relative bg-card z-50 flex py-1 px-2 justify-between items-center'>
+            <div className='h-16 w-full bottom-0 relative bg-card z-50 flex py-1 px-2 justify-between items-center'>
               <div>
-                <h4 className='text-gray-900 font-bold text-sm mb-1'>
+                <h4 className='text-gray-900 font-extrabold text-sm mb-1'>
                   {game.name}
                 </h4>
                 <svg width='12px' height='12px' viewBox='0 0 256 257'>
