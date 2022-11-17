@@ -1,0 +1,46 @@
+import express from 'express'
+import gameModel from '../schemas/game-schema.js'
+import { api } from '../games.js'
+
+const gameRouter = express.Router()
+
+// pruebaRouter.use()
+
+gameRouter.get('/', (req, res) => {
+  gameModel
+    .find({})
+    .then((response) => res.json(response))
+    .catch((err) => res.status(404).json({ error: err }))
+})
+
+gameRouter.get('/:id', (req, res) => {
+  const { id } = req.params
+
+  gameModel
+    .findById(id)
+    .then((response) => res.json(response))
+    .catch((err) => res.status(404).json({ error: err }))
+})
+
+gameRouter.post('/', (req, res) => {
+  const { game } = req.body
+
+  if (!game.name) return res.status(404).send()
+
+  const newUser = new gameModel(game)
+
+  newUser.save().then((saveUser) => res.json(saveUser))
+})
+
+gameRouter.post('/muchos', (req, res) => {
+  // const { game } = req.body
+
+  // if (!game.name) return res.status(404).send()
+  gameModel.create(api).then((response) => res.json(response))
+
+  // newUser.save().then((saveUser) => res.json(saveUser))
+})
+
+//get, post etc
+
+export default gameRouter
