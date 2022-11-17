@@ -12,6 +12,12 @@ module.exports = {
       flex: {
         mid: '0.5 0.5 0%',
       },
+      fontFamily: {
+        uBold: 'ubuntuBold',
+      },
+      borderWidth: {
+        1: '1px',
+      },
     },
   },
   plugins: [],
