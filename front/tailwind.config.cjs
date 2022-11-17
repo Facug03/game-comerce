@@ -10,7 +10,7 @@ module.exports = {
         btn: '#4618ac',
       },
       flex: {
-        mid: '0.5 0.5 0%',
+        mid: '0.35 0.5 0%',
       },
       fontFamily: {
         uBold: 'ubuntuBold',
