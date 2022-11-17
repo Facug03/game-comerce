@@ -1,8 +1,12 @@
+import { Link } from 'react-router-dom'
+
 export default function Nav() {
   return (
-    <header className='bg-nav'>
-      <nav className='flex justify-between items-center px-11 py-2'>
-        <h3 className='text-white font-uBold font-extrabold'>GAMESHOP</h3>
+    <header className='p-3'>
+      <nav className='bg-nav rounded-md flex justify-between items-center p-3'>
+        <Link to='/'>
+          <h3 className='text-white font-uBold font-extrabold'>GAMESHOP</h3>
+        </Link>
         <div className='flex items-center'>
           <input
             className='w-56 h-10 outline-none bg-transparent text-slate-100 border-b-1 p-3'
